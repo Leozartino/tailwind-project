@@ -1,4 +1,6 @@
-<aside class="h-full w-full space-y-6 border-r border-zinc-200 px-5 py-8">
+<aside
+  class="flex h-full w-full flex-col gap-6 border-r border-zinc-200 px-5 py-8"
+>
   <div class="flex items-center gap-2">
     <img src="assets/logo.svg" alt="Image of website logo" />
     <strong class="text-xl font-semibold text-zinc-900">Title UI</strong>
@@ -15,5 +17,12 @@
       placeholder="Search"
     />
   </div>
-  <project-main-navigation></project-main-navigation>
+  <project-main-navigation
+    [navItems]="mainNavigationItems"
+  ></project-main-navigation>
+  <div class="mt-auto flex flex-col gap-6">
+    <project-main-navigation
+      [navItems]="asideFooterNavItem"
+    ></project-main-navigation>
+  </div>
 </aside>
