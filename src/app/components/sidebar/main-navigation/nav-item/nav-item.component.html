@@ -1,0 +1,16 @@
+<a
+  class="group mt-4 flex items-center gap-3 rounded px-3 py-3 hover:cursor-pointer hover:bg-violet-50"
+  [routerLink]="routerPath"
+>
+  <span class="material-symbols-outlined text-zinc-500">
+    {{ navItemIcon }}
+  </span>
+  <span class="font-medium text-zinc-700 group-hover:text-violet-500">{{
+    navItemTitle
+  }}</span>
+  <span
+    class="material-symbols-outlined ml-auto text-zinc-400 group-hover:text-violet-300"
+  >
+    expand_more
+  </span>
+</a>
