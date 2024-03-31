@@ -1,0 +1,8 @@
+<nav class="space-y-0.5">
+  <project-nav-item
+    *ngFor="let navItem of navItems"
+    [routerPath]="navItem.routerPath"
+    [navItemTitle]="navItem.navItemTitle"
+    [navItemIcon]="navItem.navItemIcon"
+  ></project-nav-item>
+</nav>
