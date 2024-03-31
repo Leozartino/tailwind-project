@@ -4,7 +4,7 @@ module.exports = {
   theme: {
     extend: {
       gridTemplateColumns: {
-        app: "minmax(18rem, 20rem) 1fr",
+        main: "minmax(18rem, 20rem) 1fr",
       },
       colors: {
         amethyst: "#9b59b6",
